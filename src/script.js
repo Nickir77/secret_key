@@ -8,7 +8,7 @@ const MY_KEY = (BASE ** MY_SECRET) % PRIME;
 document.getElementById("button").addEventListener('click', function () {
     var their_key = Number(document.getElementById('text_fin').value);
     var secret_text = document.getElementById('text_secret');
-    secret_text.value = "Ваш секретный ключ это " + ((their_key ** MY_KEY) % PRIME);
+    secret_text.value = "Ваш секретный ключ это " + ((their_key ** MY_SECRET) % PRIME);
 });
 
 function getRandomInt(max) {
