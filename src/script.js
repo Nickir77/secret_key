@@ -3,7 +3,8 @@ const BASE = 6;
 const MY_SECRET = getRandomInt(PRIME - 1);
 const MY_KEY = (BASE ** MY_SECRET) % PRIME;
 
-//console.log(MY_KEY);
+console.log(MY_SECRET);
+console.log(MY_KEY);
 
 document.getElementById("button").addEventListener('click', function () {
     var their_key = Number(document.getElementById('text_fin').value);
