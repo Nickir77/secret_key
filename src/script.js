@@ -12,7 +12,7 @@ document.getElementById("button").addEventListener('click', function () {
 });
 
 function getRandomInt(max) {
-  return (Math.floor(Math.random() * max) + Date.now() % max) % max;
+  return (Math.floor(Math.random() * max) + Date.now()) % max;
 }
 
 var init_text = document.getElementById("text_init");
